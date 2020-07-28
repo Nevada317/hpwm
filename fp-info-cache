@@ -1,0 +1,1037 @@
+233638627763527
+NevaDA
+1Pin
+
+
+0
+1
+1
+NevaDA
+AMS1117
+
+
+0
+5
+3
+NevaDA
+BAT_FC1-5211
+
+
+0
+2
+2
+NevaDA
+Case_G706
+
+
+0
+8
+1
+NevaDA
+Case_G763
+
+
+0
+54
+1
+NevaDA
+CBGA_100
+
+
+0
+100
+100
+NevaDA
+CR2032
+
+
+0
+2
+2
+NevaDA
+Crystal_Clock
+Crystal THT C38-LF 8.0mm length 3.0mm diameter
+['C38-LF']
+0
+5
+3
+NevaDA
+Crystal_HC-49SMD
+
+
+0
+3
+3
+NevaDA
+Crystal_HC49-U-3pin_Vertical
+Crystal THT HC-49/U, 3pin-version, http://www.raltron.com/products/pdfspecs/crystal_hc_49_45_51.pdf
+THT crystalHC-49/U
+0
+3
+3
+NevaDA
+C_0603
+Resistor SMD 0603, hand soldering
+resistor 0603
+0
+2
+2
+NevaDA
+C_1206
+Resistor SMD 1206, hand soldering
+resistor 1206
+0
+2
+2
+NevaDA
+C_Radial_D10mm_P5.00mm
+CP, Radial series, Radial, pin pitch=5.00mm, , diameter=10mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 5.00mm  diameter 10mm Electrolytic Capacitor
+0
+2
+2
+NevaDA
+D-PAK
+
+DPAK TO-252 DPAK-3 TO-252-3 SOT-428
+0
+7
+3
+NevaDA
+D2-PAK
+
+
+0
+17
+3
+NevaDA
+D2-PAK-5
+
+
+0
+6
+5
+NevaDA
+DIP-4_W7.62mm
+4-lead dip package, row spacing 7.62 mm (300 mils)
+DIL DIP PDIP 2.54mm 7.62mm 300mil
+0
+4
+4
+NevaDA
+DIP-6
+6-lead dip package, row spacing 7.62 mm (300 mils)
+DIL DIP PDIP 2.54mm 7.62mm 300mil
+0
+6
+6
+NevaDA
+DO-27
+
+
+0
+2
+2
+NevaDA
+DO-41
+
+
+0
+2
+2
+NevaDA
+DO-214AB_SMC
+
+
+0
+2
+2
+NevaDA
+DRB-09FA
+
+
+0
+11
+10
+NevaDA
+DRB-09MA
+
+
+0
+11
+10
+NevaDA
+Drill_3mm
+
+
+0
+1
+1
+NevaDA
+DS1070-3MR
+
+
+0
+3
+3
+NevaDA
+DS1070-4MR
+
+
+0
+4
+4
+NevaDA
+DS1070-5MR
+
+
+0
+5
+5
+NevaDA
+DS1070-6MR
+
+
+0
+6
+6
+NevaDA
+DS1070-8MR
+
+
+0
+8
+8
+NevaDA
+DS1070-10MR
+
+
+0
+10
+10
+NevaDA
+DS1070-11MR
+
+
+0
+11
+11
+NevaDA
+DS1138-07
+
+
+0
+12
+9
+NevaDA
+D_MiniMELF_HS
+Diode Mini-MELF Handsoldering
+Diode Mini-MELF Handsoldering
+0
+2
+2
+NevaDA
+ESP-01
+
+
+0
+8
+8
+NevaDA
+HSOP-8
+
+
+0
+12
+9
+NevaDA
+HSOP-8D
+
+
+0
+16
+9
+NevaDA
+HZIP25-P-1.27
+
+
+0
+25
+25
+NevaDA
+IDC_Header_Right_6pins
+10 pins through hole IDC header
+IDC header socket VASCH
+0
+6
+6
+NevaDA
+IDC_Header_Right_10pins
+10 pins through hole IDC header
+IDC header socket VASCH
+0
+10
+10
+NevaDA
+IDC_Header_Straight_6pins
+10 pins through hole IDC header
+IDC header socket VASCH
+0
+6
+6
+NevaDA
+IDC_Header_Straight_10pins
+10 pins through hole IDC header
+IDC header socket VASCH
+0
+10
+10
+NevaDA
+IDC_Header_Straight_20pins
+10 pins through hole IDC header
+IDC header socket VASCH
+0
+20
+20
+NevaDA
+Ivan_AMS1117-3.3
+
+
+0
+4
+3
+NevaDA
+J_LM
+
+
+0
+2
+2
+NevaDA
+LED_3.0mm_pin1-anode
+LED, diameter 3.0mm, 2 pins
+LED diameter 3.0mm 2 pins
+0
+2
+2
+NevaDA
+LED_3.0mm_pin1-cathode
+LED, diameter 3.0mm, 2 pins
+LED diameter 3.0mm 2 pins
+0
+2
+2
+NevaDA
+LED_D3.0mm_FlatTop
+LED, Round, FlatTop, diameter 3.0mm, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-47XEC(Ver.9A).pdf
+LED Round FlatTop diameter 3.0mm 2 pins
+0
+2
+2
+NevaDA
+LED_KP-2012G
+
+
+0
+2
+2
+NevaDA
+LED_KP-2012R
+
+
+0
+2
+2
+NevaDA
+LED_RGB_5050-6
+http://cdn.sparkfun.com/datasheets/Components/LED/5060BRG4.pdf
+RGB LED 5050-6
+0
+6
+6
+NevaDA
+Logo_SmartVend
+
+
+0
+0
+0
+NevaDA
+LQFP-48_7x7mm_P0.5mm
+LQFP, 48 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2358-16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP
+0
+48
+48
+NevaDA
+L_1010
+
+
+0
+2
+2
+NevaDA
+L_RCH114
+
+
+0
+2
+2
+NevaDA
+MC60
+
+
+0
+68
+68
+NevaDA
+MF-2x03-RA
+
+
+0
+6
+6
+NevaDA
+microSD_TF_10M
+
+
+0
+12
+11
+NevaDA
+MP1584_5V
+
+
+0
+8
+3
+NevaDA
+Pad_Wire
+
+
+0
+2
+1
+NevaDA
+Pad_Wire_1.6mm
+
+
+0
+2
+1
+NevaDA
+Pin_Header_Straight_1x02_Pitch2.54mm
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+NevaDA
+PLD-6
+
+
+0
+12
+6
+NevaDA
+PLS-3
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+NevaDA
+PLS-4
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+4
+4
+NevaDA
+PLS-6
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+6
+6
+NevaDA
+PLS-6R
+Through hole angled pin header, 1x06, 2.54mm pitch, 6mm pin length, single row
+Through hole angled pin header THT 1x06 2.54mm single row
+0
+6
+6
+NevaDA
+PLS-8
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+8
+8
+NevaDA
+PLS-8R
+Through hole angled pin header, 1x06, 2.54mm pitch, 6mm pin length, single row
+Through hole angled pin header THT 1x06 2.54mm single row
+0
+8
+8
+NevaDA
+QFN-44
+
+
+0
+45
+45
+NevaDA
+Quectel_M66
+
+
+0
+44
+44
+NevaDA
+Relay_NRP18
+
+
+0
+5
+5
+NevaDA
+RJ45_DS1126
+8 Pol Shallow Latch Connector, Modjack, RJ45 (https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0102.pdf)
+RJ45
+0
+13
+9
+NevaDA
+RJ45_DS1126_a
+8 Pol Shallow Latch Connector, Modjack, RJ45 (https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0102.pdf)
+RJ45
+0
+12
+9
+NevaDA
+RJ45_DS1126_b
+8 Pol Shallow Latch Connector, Modjack, RJ45 (https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0102.pdf)
+RJ45
+0
+12
+9
+NevaDA
+R_0402_NoSilk
+Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0402
+0
+2
+2
+NevaDA
+R_0603
+Resistor SMD 0603, hand soldering
+resistor 0603
+0
+2
+2
+NevaDA
+R_0603_Jumper
+Resistor SMD 0603, hand soldering
+resistor 0603
+0
+3
+3
+NevaDA
+R_1206
+Resistor SMD 1206, hand soldering
+resistor 1206
+0
+2
+2
+NevaDA
+R_2512
+Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+NevaDA
+R_2728
+
+
+0
+2
+2
+NevaDA
+R_Adj
+
+
+0
+3
+3
+NevaDA
+R_Array_SIP9
+9-pin Resistor SIP pack
+R
+0
+9
+9
+NevaDA
+R_CAT-16-4
+
+
+0
+8
+8
+NevaDA
+R_CAY17
+
+
+0
+11
+10
+NevaDA
+Screw_M3_6mm
+
+
+0
+1
+1
+NevaDA
+Screw_M3_9mm
+
+
+0
+9
+1
+NevaDA
+SIM_Slide
+8 pin SIM connector for IQRF TR modules
+IQRF_KON-SIM-01
+0
+10
+9
+NevaDA
+SMA-Edge
+
+
+0
+6
+2
+NevaDA
+SMA-JR
+
+
+0
+5
+2
+NevaDA
+SOIC-8_3.9x4.9mm_Pitch1.27mm
+8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+NevaDA
+SOIC-14
+16-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+14
+14
+NevaDA
+SOIC-16
+16-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+16
+16
+NevaDA
+SOIC-20
+16-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+20
+20
+NevaDA
+SOP-8
+8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+NevaDA
+SOP-8_5.3mm
+8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+NevaDA
+SOT-23
+SOT-23, Handsoldering
+SOT-23
+0
+3
+3
+NevaDA
+SOT-23-5
+5-pin SOT23 package
+SOT-23-5 hand-soldering
+0
+5
+5
+NevaDA
+SOT-23-6
+6-pin SOT-23 package, Handsoldering
+SOT-23-6 Handsoldering
+0
+6
+6
+NevaDA
+SOT-223
+
+
+0
+5
+3
+NevaDA
+SOT-363
+
+
+0
+6
+6
+NevaDA
+SOT-753
+
+
+0
+5
+5
+NevaDA
+SSOP-28
+28-Lead Plastic Shrink Small Outline (SS)-5.30 mm Body [SSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+28
+28
+NevaDA
+SSOP-28_HS
+28-Lead Plastic Shrink Small Outline (SS)-5.30 mm Body [SSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+32
+28
+NevaDA
+SW_18020
+
+
+0
+2
+2
+NevaDA
+SW_DIP_x4_W7.62mm_Slide
+4x-dip-switch, Slide, row spacing 7.62 mm (300 mils)
+DIP Switch Slide 7.62mm 300mil
+0
+8
+8
+NevaDA
+SW_DIP_x8
+4x-dip-switch, Slide, row spacing 7.62 mm (300 mils)
+DIP Switch Slide 7.62mm 300mil
+0
+16
+16
+NevaDA
+SW_PUSH-12mm
+SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf
+tact sw push 12mm
+0
+4
+2
+NevaDA
+SW_PUSH_6mm
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+tact sw push 6mm
+0
+4
+2
+NevaDA
+SW_PUSH_6x21mm
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+tact sw push 6mm
+0
+4
+2
+NevaDA
+Terminal_3.5mm_x2
+
+
+0
+2
+2
+NevaDA
+Terminal_3.5mm_x4
+
+
+0
+4
+4
+NevaDA
+Terminal_3.5mm_x6
+
+
+0
+6
+6
+NevaDA
+Terminal_3.5mm_x8
+
+
+0
+8
+8
+NevaDA
+Terminal_3.5mm_x10
+
+
+0
+10
+10
+NevaDA
+Terminal_3.5mm_x12
+
+
+0
+12
+12
+NevaDA
+Terminal_3.5mm_x14
+
+
+0
+14
+14
+NevaDA
+Terminal_3.5mm_x16
+
+
+0
+16
+16
+NevaDA
+Terminal_5.0mm_x3
+
+
+0
+3
+3
+NevaDA
+Terminal_7.5mm_x3
+
+
+0
+3
+3
+NevaDA
+Terminal_X977B06
+
+
+0
+6
+6
+NevaDA
+TJ1A-6P6C
+RJ12 connector  https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0082.pdf
+RJ12 connector
+0
+6
+6
+NevaDA
+TJ9S-8P8C-08
+
+
+0
+71
+65
+NevaDA
+TO-92
+
+
+0
+3
+3
+NevaDA
+TO-220-ST_Horiz
+
+
+0
+13
+3
+NevaDA
+TO-220_Vertical
+TO-220, Vertical, RM 2.54mm
+TO-220 Vertical RM 2.54mm
+0
+3
+3
+NevaDA
+TO-220_Vertical_Heatsink
+TO-220, Vertical, RM 2.54mm
+TO-220 Vertical RM 2.54mm
+0
+3
+3
+NevaDA
+TP_2mm
+
+
+0
+1
+1
+NevaDA
+TQFP-32
+44-Lead small Plastic Thin Quad Flatpack (PT) - 10x10x1.0 mm
+QFP 0.8 Hand-Solder
+0
+32
+32
+NevaDA
+TQFP-44
+44-Lead small Plastic Thin Quad Flatpack (PT) - 10x10x1.0 mm
+QFP 0.8 Hand-Solder
+0
+44
+44
+NevaDA
+TQFP-44-tiny_10x10mm_Pitch0.8mm
+44-Lead small Plastic Thin Quad Flatpack (PT) - 10x10x1.0 mm
+QFP 0.8 Hand-Solder
+0
+44
+44
+NevaDA
+TQFP-100_14x14mm_P0.5mm
+TQFP, 100 Pin (http://www.microsemi.com/index.php?option=com_docman&task=doc_download&gid=131095), generated with kicad-footprint-generator ipc_qfp_generator.py
+TQFP QFP
+0
+100
+100
+NevaDA
+TSSOP-20
+20-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+20
+20
+NevaDA
+TSSOP-20_HS
+20-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+24
+20
+NevaDA
+USBA_M_DS1097
+
+
+0
+6
+5
+NevaDA
+USBB-1J
+
+
+0
+6
+5
+NevaDA
+USB_A
+USB A connector
+USB USB_A
+0
+6
+5
+NevaDA
+USB_A_x2
+
+
+0
+12
+9
+NevaDA
+USB_micro_47346
+
+
+0
+11
+6
+NevaDA
+USB_Mini-B_Lumberg_2486_01
+USB Mini-B 5-pin SMD connector, http://downloads.lumberg.com/datenblaetter/en/2486_01.pdf
+USB USB_B USB_Mini connector
+0
+9
+6
+NevaDA
+USB_miniA_175
+
+
+0
+9
+6
+NevaDA
+VL53L1X
+
+
+0
+13
+12
+NevaDA
+WB-2x03R
+
+
+0
+6
+6
+NevaDA
+WB-2x04R
+
+
+0
+8
+8
+NevaDA
+WB-2x05R
+
+
+0
+10
+10
+NevaDA
+WB-2x06R
+
+
+0
+12
+12
+NevaDA
+WB-2x08R
+
+
+0
+16
+16
+NevaDA
+WK-6
+
+
+0
+6
+6
+NevaDA
+WK-12
+
+
+0
+12
+12
