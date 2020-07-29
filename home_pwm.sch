@@ -145,23 +145,23 @@ F 3 "" H 5450 7000 50  0001 C CNN
 	1    5450 7000
 	1    0    0    -1  
 $EndComp
-Text Label 5450 7100 0    50   ~ 0
+Text Label 5450 7100 0    50   ~ 8
 MOSI
-Text Label 4650 7000 2    50   ~ 0
+Text Label 4650 7000 2    50   ~ 8
 MISO
-Text Label 4650 7100 2    50   ~ 0
+Text Label 4650 7100 2    50   ~ 8
 SCK
-Text Label 4650 7200 2    50   ~ 0
+Text Label 4650 7200 2    50   ~ 8
 RST
-Text Label 4100 3850 0    50   ~ 0
+Text Label 4100 3850 0    50   ~ 8
 MISO
-Text Label 4100 3950 0    50   ~ 0
+Text Label 4100 3950 0    50   ~ 8
 SCK
-Text Label 2900 3750 2    50   ~ 0
+Text Label 2900 3750 2    50   ~ 8
 RST
-Text Label 4100 3750 0    50   ~ 0
+Text Label 4100 3750 0    50   ~ 8
 MOSI
-Text Label 2950 7200 2    50   ~ 0
+Text Label 2950 7200 2    50   ~ 8
 RST
 $Comp
 L Device:R R3
@@ -189,13 +189,13 @@ Wire Wire Line
 	2950 7200 3100 7200
 Wire Wire Line
 	3100 7200 3100 7050
-Text Label 4100 3650 0    50   ~ 0
+Text Label 4100 3650 0    50   ~ 8
 PWM1
-Text Label 4100 3550 0    50   ~ 0
+Text Label 4100 3550 0    50   ~ 8
 PWM2
-Text Label 8700 4550 2    50   ~ 0
+Text Label 8700 4550 2    50   ~ 8
 PWM1
-Text Label 8700 4950 2    50   ~ 0
+Text Label 8700 4950 2    50   ~ 8
 PWM2
 $Comp
 L Device:R R7
@@ -242,9 +242,9 @@ F 3 "~" H 1800 1300 50  0001 C CNN
 	1    1800 1300
 	-1   0    0    -1  
 $EndComp
-Text Label 2000 1500 0    39   ~ 0
+Text Label 2000 1500 0    39   ~ 7
 OUT1
-Text Label 2000 1600 0    39   ~ 0
+Text Label 2000 1600 0    39   ~ 7
 OUT2
 $Comp
 L power:GNDD #PWR0107
@@ -294,9 +294,9 @@ F 3 "~" H 2500 1400 50  0001 C CNN
 	1    2500 1400
 	0    1    -1   0   
 $EndComp
-Text Label 10650 4050 0    39   ~ 0
+Text Label 10650 4050 0    39   ~ 7
 OUT1
-Text Label 10650 4950 0    39   ~ 0
+Text Label 10650 4950 0    39   ~ 7
 OUT2
 $Comp
 L Device:Crystal_GND2 Y1
@@ -422,7 +422,7 @@ Wire Wire Line
 Connection ~ 2450 1400
 Wire Wire Line
 	2000 1400 2200 1400
-Text Label 2000 1100 0    39   ~ 0
+Text Label 2000 1100 0    39   ~ 7
 SWITCH
 Wire Wire Line
 	2000 1200 2200 1200
@@ -518,13 +518,13 @@ Wire Wire Line
 Wire Wire Line
 	7400 1650 7400 1800
 Connection ~ 7400 1800
-Text Label 6950 1800 2    39   ~ 0
+Text Label 6950 1800 2    39   ~ 7
 SWITCH
-Text Label 7550 1800 0    39   ~ 0
+Text Label 7550 1800 0    39   ~ 7
 SWITCH_CMOS
 Wire Wire Line
 	7550 1800 7400 1800
-Text Label 4100 5050 0    39   ~ 0
+Text Label 4100 5050 0    39   ~ 7
 SWITCH_CMOS
 NoConn ~ 2900 4250
 NoConn ~ 2900 4450
@@ -930,9 +930,9 @@ $EndComp
 Wire Wire Line
 	7950 3600 8050 3600
 Connection ~ 7950 3600
-Text Label 8050 3600 0    50   ~ 0
+Text Label 8050 3600 0    50   ~ 8
 OPTIC
-Text Label 4100 4450 0    50   ~ 0
+Text Label 4100 4450 0    50   ~ 8
 OPTIC
 $Comp
 L Connector:TestPoint TP1
@@ -1011,11 +1011,11 @@ F 3 "" H 7400 3100 50  0001 C CNN
 	1    7400 3100
 	1    0    0    -1  
 $EndComp
-Text Label 2300 4950 0    39   ~ 0
+Text Label 2300 4950 0    39   ~ 7
 XTAL1
-Text Label 2300 5450 0    39   ~ 0
+Text Label 2300 5450 0    39   ~ 7
 XTAL2
-Text Label 2600 4050 0    39   ~ 0
+Text Label 2600 4050 0    39   ~ 7
 AREF
 $Comp
 L Connector:TestPoint TP4
@@ -1077,17 +1077,17 @@ Wire Wire Line
 Wire Wire Line
 	9950 5500 9950 5150
 Connection ~ 9950 5150
-Text Label 4100 4150 0    50   ~ 0
+Text Label 4100 4150 0    50   ~ 8
 LED_1
-Text Label 4100 4250 0    50   ~ 0
+Text Label 4100 4250 0    50   ~ 8
 LED_2
-Text Label 4100 4350 0    50   ~ 0
+Text Label 4100 4350 0    50   ~ 8
 LED_3
-Text Label 5400 4400 2    50   ~ 0
+Text Label 5400 4400 2    50   ~ 8
 LED_1
-Text Label 5400 4600 2    50   ~ 0
+Text Label 5400 4600 2    50   ~ 8
 LED_2
-Text Label 5400 4800 2    50   ~ 0
+Text Label 5400 4800 2    50   ~ 8
 LED_3
 $Comp
 L symbol:LED_RGB_5050BRG D2
@@ -1208,13 +1208,13 @@ F 3 "" H 6000 5850 50  0001 C CNN
 	1    6000 5850
 	0    -1   -1   0   
 $EndComp
-Text Label 5600 5450 2    50   ~ 0
+Text Label 5600 5450 2    50   ~ 8
 BTN1
-Text Label 5600 5850 2    50   ~ 0
+Text Label 5600 5850 2    50   ~ 8
 BTN2
-Text Label 4100 5150 0    50   ~ 0
+Text Label 4100 5150 0    50   ~ 8
 BTN1
-Text Label 4100 5250 0    50   ~ 0
+Text Label 4100 5250 0    50   ~ 8
 BTN2
 $Comp
 L Connector:TestPoint TP5
@@ -1299,9 +1299,9 @@ F 3 "" H 4100 7600 50  0001 C CNN
 	1    4100 7600
 	1    0    0    -1  
 $EndComp
-Text Label 4000 7200 2    50   ~ 0
+Text Label 4000 7200 2    50   ~ 8
 BTN2
-Text Label 3500 7200 2    50   ~ 0
+Text Label 3500 7200 2    50   ~ 8
 BTN1
 $Comp
 L Device:R R19
