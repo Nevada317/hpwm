@@ -1,0 +1,9 @@
+build
+*~
+~*
+*#
+*.bak
+
+*.hex
+*.lst
+*.map
