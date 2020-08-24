@@ -25,11 +25,16 @@ Loop:
 	lsr R16
 	lsr R16
 	andi R16, 0x07
+
 	in R17, PORTC
 	cbr R17, 0x07
 	or R17, R16
 	out PORTC, R17
 
+	in R17, PORTB
+	cbr R17, 0x07
+	or R17, R16
+	out PORTB, R17
 
 rjmp Loop
 
