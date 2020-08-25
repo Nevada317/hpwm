@@ -9,7 +9,7 @@ out DDRB, R16
 out PORTB, R17
 
 ldi R16, 0b00000111
-ldi R17, 0b00110001
+ldi R17, 0b00110000
 out DDRC, R16
 out PORTC, R17
 

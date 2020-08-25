@@ -1,0 +1,11 @@
+#include "libs.h"
+
+void GPIO_Init() {
+	PORTB = 0b00111001;
+	PORTC = 0b00110000;
+	PORTD = 0b11111111;
+
+	DDRB = 0b00000110;
+	DDRC = 0b00000111;
+	DDRD = 0b00000000;
+}
