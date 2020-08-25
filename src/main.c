@@ -1,6 +1,8 @@
 #include "libs.h"
 void loop();
 
+static uint8_t UserIn = 0;
+
 int main(void) {
 	GPIO_Init();
 	PWM_Init();
@@ -12,17 +14,21 @@ int main(void) {
 }
 
 void loop() {
-	uint8_t temp;
-	uint8_t port;
-	temp = ~(PIND >> 2) & 7;
-	port = PORTC;
-	port &= ~7;
-	port |= temp;
-	PORTC = temp;
+// 	temp = ~(PIND >> 2) & 7;
 
-	port = PORTB;
-	port &= ~7;
-	port |= temp;
-	PORTB = temp;
+// 	if (temp & (1<<1))
+// 		UserIn++;
+// 	if (temp & (1<<2))
+// 		UserIn--;
 
+	do {
+		PWM_SetWGamma(UserIn);
+		UserIn++;
+		_delay_ms(10);
+	} while (UserIn != 0);
+	do {
+		UserIn--;
+		PWM_SetWGamma(UserIn);
+		_delay_ms(10);
+	} while (UserIn != 0);
 }
