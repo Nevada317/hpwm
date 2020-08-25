@@ -1,0 +1,3 @@
+void ADC_Init() {
+
+}

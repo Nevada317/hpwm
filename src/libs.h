@@ -2,6 +2,8 @@
 #define LIBS_H_
 
 #include "gpio.h"
+#include "pwm.h"
+#include "adc.h"
 
 // May be needed later:
 // #include <avr/eeprom.h>
