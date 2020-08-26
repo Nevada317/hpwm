@@ -8,6 +8,8 @@ int main(void) {
 	PWM_Init();
 	ADC_Init();
 
+	sei();
+
 	PORTC |= (1<<2);
 	while (1)
 		loop();
@@ -21,14 +23,18 @@ void loop() {
 // 	if (temp & (1<<2))
 // 		UserIn--;
 
-	do {
-		PWM_SetWGamma(UserIn);
-		UserIn++;
-		_delay_ms(10);
-	} while (UserIn != 0);
-	do {
-		UserIn--;
-		PWM_SetWGamma(UserIn);
-		_delay_ms(10);
-	} while (UserIn != 0);
+// 	UserIn--;
+// 	PWM_SetWGamma(ADCH);
+// 	_delay_ms(10);
+
+// 	do {
+// 		PWM_SetWGamma(UserIn);
+// 		UserIn++;
+// 		_delay_ms(10);
+// 	} while (UserIn != 0);
+// 	do {
+// 		UserIn--;
+// 		PWM_SetWGamma(UserIn);
+// 		_delay_ms(10);
+// 	} while (UserIn != 0);
 }
