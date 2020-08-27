@@ -8,7 +8,7 @@ int main(void) {
 	PWM_Init();
 	ADC_Init();
 	SYSTIMER_Init();
-
+	MODES_Init();
 
 	sei();
 
@@ -18,25 +18,5 @@ int main(void) {
 }
 
 void loop() {
-// 	temp = ~(PIND >> 2) & 7;
 
-// 	if (temp & (1<<1))
-// 		UserIn++;
-// 	if (temp & (1<<2))
-// 		UserIn--;
-
-// 	UserIn--;
-// 	PWM_SetWGamma(ADCH);
-// 	_delay_ms(10);
-
-// 	do {
-// 		PWM_SetWGamma(UserIn);
-// 		UserIn++;
-// 		_delay_ms(10);
-// 	} while (UserIn != 0);
-// 	do {
-// 		UserIn--;
-// 		PWM_SetWGamma(UserIn);
-// 		_delay_ms(10);
-// 	} while (UserIn != 0);
 }

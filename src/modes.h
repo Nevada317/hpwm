@@ -19,6 +19,10 @@ typedef enum devMode {
 } devMode;
 #define devMode_max 3
 
+
 devMode getMode();
+void setMode(devMode NewMode);
+
+void MODES_Init();
 bool IsOn();
 
