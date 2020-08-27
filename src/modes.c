@@ -13,6 +13,7 @@ void ISR_INT_SwitchOff();
 #define INTx_PIN PIND
 #define INTx_N 3
 
+#define PowerSwitchTimeout 60 // roughly in 1/60ths of second
 
 void MODES_Init() {
 	GICR |= (1<<INTx);
@@ -20,6 +21,8 @@ void MODES_Init() {
 		ISR_INT_SwitchOn();
 	else
 		ISR_INT_SwitchOff();
+	SYSTIMER_TO.TO_PowerSwitch = 0;
+	updateMode();
 }
 
 devMode getMode() {
@@ -29,7 +32,10 @@ devMode getMode() {
 }
 
 bool IsOn() {
-	return (!(INTx_PIN & (1<<INTx_N)));
+	if (INTx_PIN & (1<<INTx_N))
+		return (SYSTIMER_TO.TO_PowerSwitch > 0);
+	else
+		return true;
 }
 
 void setMode(devMode NewMode) {
@@ -69,12 +75,15 @@ ISR(INTx_vect) {
 void ISR_INT_SwitchOff() {
 	MCUCR &= ~(1<<ISCx0); // Set to falling edge
 	ptrISR_INT_handler = &ISR_INT_SwitchOn;
-	updateMode();
+	// Reset timeout, so off is delayed
+	SYSTIMER_TO.TO_PowerSwitch = PowerSwitchTimeout;
 }
 
 void ISR_INT_SwitchOn() {
 	MCUCR |= (1<<ISC10); // Set to rising edge
 	ptrISR_INT_handler = &ISR_INT_SwitchOff;
-	setMode(getMode()+1);
+	// If off transition was not long ago - change mode
+	if (SYSTIMER_TO.TO_PowerSwitch > 0)
+		setMode(getMode()+1);
 }
 
