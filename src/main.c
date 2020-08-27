@@ -12,7 +12,6 @@ int main(void) {
 
 	sei();
 
-	PORTC |= (1<<2);
 	while (1)
 		loop();
 }

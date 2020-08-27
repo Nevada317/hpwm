@@ -29,13 +29,17 @@ devMode getMode() {
 }
 
 bool IsOn() {
-	return true;
+	return (!(INTx_PIN & (1<<INTx_N)));
 }
 
 void setMode(devMode NewMode) {
 	CurrentMode = NewMode;
 	if (CurrentMode > devMode_max)
 		CurrentMode = 0;
+	updateMode();
+}
+
+void updateMode() {
 	ledColor LedColor = LED_R;
 	if (IsOn()) {
 		switch (CurrentMode) {
@@ -57,6 +61,7 @@ void setMode(devMode NewMode) {
 	PORTC = LedColor;
 }
 
+
 ISR(INTx_vect) {
 	(*ptrISR_INT_handler)();
 }
@@ -64,12 +69,12 @@ ISR(INTx_vect) {
 void ISR_INT_SwitchOff() {
 	MCUCR &= ~(1<<ISCx0); // Set to falling edge
 	ptrISR_INT_handler = &ISR_INT_SwitchOn;
-	setMode(1);
+	updateMode();
 }
 
 void ISR_INT_SwitchOn() {
 	MCUCR |= (1<<ISC10); // Set to rising edge
 	ptrISR_INT_handler = &ISR_INT_SwitchOff;
-	setMode(2);
+	setMode(getMode()+1);
 }
 

@@ -22,6 +22,7 @@ typedef enum devMode {
 
 devMode getMode();
 void setMode(devMode NewMode);
+void updateMode();
 
 void MODES_Init();
 bool IsOn();
