@@ -1,6 +1,7 @@
 #include "libs.h"
 
 void PWM_Init();
+void FaderTick();
 
-void PWM_SetRaw(uint8_t RawValue);
-void PWM_SetWGamma(uint8_t Value);
+void PWM_SetTarget(uint8_t Value);
+uint8_t PWM_GetFader();

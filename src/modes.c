@@ -13,7 +13,7 @@ void ISR_INT_SwitchOff();
 #define INTx_PIN PIND
 #define INTx_N 3
 
-#define PowerSwitchTimeout 60 // roughly in 1/60ths of second
+#define PowerSwitchTimeout 244 // roughly in 1/244ths of second
 
 void MODES_Init() {
 	GICR |= (1<<INTx);
@@ -51,16 +51,20 @@ void updateMode() {
 		switch (CurrentMode) {
 			case devMode_LVL1:
 				LedColor = LED_G;
+				PWM_SetTarget(30); // dummy
 				break;
 			case devMode_LVL2:
 				LedColor = LED_C;
+				PWM_SetTarget(100); // dummy
 				break;
 			case devMode_LVL3:
 				LedColor = LED_B;
+				PWM_SetTarget(255); // dummy
 				break;
 			case devMode_AUTO:
 			default:
 				LedColor = LED_Y;
+				PWM_SetTarget(100); // dummy
 				break;
 		}
 	}

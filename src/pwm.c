@@ -1,5 +1,11 @@
 #include "libs.h"
 
+static uint8_t Fader_Current = 0;
+static uint8_t Fader_Target  = 0;
+
+void PWM_SetRaw(uint8_t RawValue);
+void PWM_SetWGamma(uint8_t Value);
+
 void PWM_Init() {
 	// Port A - normal
 	// Port B - inverted
@@ -26,5 +32,29 @@ void PWM_SetRaw(uint8_t RawValue) {
 		return;
 	OCR1A = RawValue;
 	OCR1B = RawValue^255;
-// 	TCNT1 = 0;
 }
+
+void FaderTick() {
+	uint8_t DesiredLevel;
+	DesiredLevel = Fader_Target;
+	if (!IsOn())
+		DesiredLevel = 0;
+
+	if (Fader_Current == DesiredLevel)
+		return;
+
+	if (Fader_Current > DesiredLevel)
+		Fader_Current--;
+	else
+		Fader_Current++;
+	PWM_SetWGamma(Fader_Current);
+}
+
+void PWM_SetTarget(uint8_t Value) {
+	Fader_Target = Value;
+}
+
+uint8_t PWM_GetFader() {
+	return Fader_Current;
+}
+
