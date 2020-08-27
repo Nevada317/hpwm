@@ -10,7 +10,7 @@
 // #include <util/delay.h>
 // #include <util/crc16.h>
 #include <util/delay.h>
-// #include <stdbool.h>
+#include <stdbool.h>
 // #include <string.h>
 #include <stdint.h>
 // #include <stdio.h>
@@ -20,6 +20,8 @@
 #include "gpio.h"
 #include "pwm.h"
 #include "adc.h"
+#include "modes.h"
+#include "systimer.h"
 
 
 #endif

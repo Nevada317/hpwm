@@ -6,5 +6,5 @@ void ADC_Init() {
 }
 
 ISR(ADC_vect) {
-	PWM_SetWGamma(ADCH);
+	PWM_SetWGamma(255-ADCH);
 }
