@@ -1,5 +1,7 @@
 #include "libs.h"
 
+#include "gamma.h"
+
 static uint8_t Fader_Current = 0;
 static uint8_t Fader_Target  = 0;
 
@@ -21,10 +23,9 @@ void PWM_Init() {
 	TCNT1 = 0;
 }
 void PWM_SetWGamma(uint8_t Value) {
-	uint16_t temp;
-	temp = Value;
-	temp *= (uint16_t)Value;
-	PWM_SetRaw(temp>>8);
+	uint8_t GammaVal;
+	GammaVal = pgm_read_byte(((uint8_t*)&GammaTable)+Value);
+	PWM_SetRaw(GammaVal);
 }
 
 void PWM_SetRaw(uint8_t RawValue) {
