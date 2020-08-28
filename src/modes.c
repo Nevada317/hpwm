@@ -23,7 +23,6 @@ void ISR_INT_SwitchOff();
 #endif
 
 #define PowerSwitchTimeout 244 // roughly in 1/244ths of second
-static uint8_t temp = 0;
 
 void MODES_Init() {
 	GICR |= (1<<INTx);
@@ -33,9 +32,6 @@ void MODES_Init() {
 		ISR_INT_SwitchOff();
 	SYSTIMER_TO.TO_PowerSwitch = 0;
 	updateMode();
-
-	GPIO_SetEditor(&temp);
-
 }
 
 devMode getMode() {
@@ -64,22 +60,28 @@ void updateMode() {
 		switch (CurrentMode) {
 			case devMode_LVL1:
 				LedColor = LED_G;
-				PWM_SetTarget(30); // dummy
+				PWM_SetTarget(*(rConfig+0));
+				GPIO_SetEditor(rConfig+0);
 				break;
 			case devMode_LVL2:
 				LedColor = LED_C;
-				PWM_SetTarget(100); // dummy
+				PWM_SetTarget(*(rConfig+1));
+				GPIO_SetEditor(rConfig+1);
 				break;
 			case devMode_LVL3:
 				LedColor = LED_B;
-				PWM_SetTarget(255); // dummy
+				PWM_SetTarget(*(rConfig+2));
+				GPIO_SetEditor(rConfig+2);
 				break;
 			case devMode_AUTO:
 			default:
 				LedColor = LED_Y;
-				PWM_SetTarget(temp); // dummy
+				PWM_SetTarget(*(rConfig+3)); // dummy
+				GPIO_SetEditor(rConfig+3);
 				break;
 		}
+	} else {
+		EEPROM_StoreConfig();
 	}
 	PORTC = LedColor;
 }

@@ -32,11 +32,15 @@ void GPIO_Tick() {
 		return;
 
 	if (pins == (1<<Button_Plus)) {
-		if (*ptrBtnEdit != 255)
+		if (*ptrBtnEdit != 255){
 			(*ptrBtnEdit)++;
+			EEPROM_MarkDirty();
+		}
 	} else {
-		if (*ptrBtnEdit != 0)
+		if (*ptrBtnEdit != 0){
 			(*ptrBtnEdit)--;
+			EEPROM_MarkDirty();
+		}
 	}
 	SYSTIMER_TO.TO_ButtonDelay = Button_Cooldown;
 }

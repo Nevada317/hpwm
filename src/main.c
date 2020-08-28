@@ -4,6 +4,7 @@ void loop();
 // static uint8_t UserIn = 0;
 
 int main(void) {
+	EEPROM_Init();
 	GPIO_Init();
 	PWM_Init();
 	ADC_Init();
