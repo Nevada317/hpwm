@@ -13,6 +13,7 @@ ISR(TIMER0_OVF_vect) {
 		ptr++;
 	}
 	updateMode();
+	GPIO_Tick();
 	FaderTick();
 }
 

@@ -8,4 +8,5 @@ void SYSTIMER_Init();
 // IMPORTANT: Use only uint16_t variables here!
 struct SYSTIMER_Timeout {
 	uint16_t TO_PowerSwitch;
+	uint16_t TO_ButtonDelay;
 } SYSTIMER_TO;

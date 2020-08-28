@@ -6,14 +6,24 @@ static void (*ptrISR_INT_handler)();
 void ISR_INT_SwitchOn();
 void ISR_INT_SwitchOff();
 
-#define ISCx0 ISC10
-#define ISCx1 ISC11
-#define INTx INT1
-#define INTx_vect INT1_vect
-#define INTx_PIN PIND
-#define INTx_N 3
+#if 0
+	#define ISCx0 ISC10
+	#define ISCx1 ISC11
+	#define INTx INT1
+	#define INTx_vect INT1_vect
+	#define INTx_PIN PIND
+	#define INTx_N 3
+#else
+	#define ISCx0 ISC00
+	#define ISCx1 ISC01
+	#define INTx INT0
+	#define INTx_vect INT0_vect
+	#define INTx_PIN PIND
+	#define INTx_N 2
+#endif
 
 #define PowerSwitchTimeout 244 // roughly in 1/244ths of second
+static uint8_t temp = 0;
 
 void MODES_Init() {
 	GICR |= (1<<INTx);
@@ -23,6 +33,9 @@ void MODES_Init() {
 		ISR_INT_SwitchOff();
 	SYSTIMER_TO.TO_PowerSwitch = 0;
 	updateMode();
+
+	GPIO_SetEditor(&temp);
+
 }
 
 devMode getMode() {
@@ -64,7 +77,7 @@ void updateMode() {
 			case devMode_AUTO:
 			default:
 				LedColor = LED_Y;
-				PWM_SetTarget(100); // dummy
+				PWM_SetTarget(temp); // dummy
 				break;
 		}
 	}
@@ -84,7 +97,7 @@ void ISR_INT_SwitchOff() {
 }
 
 void ISR_INT_SwitchOn() {
-	MCUCR |= (1<<ISC10); // Set to rising edge
+	MCUCR |= (1<<ISCx0); // Set to rising edge
 	ptrISR_INT_handler = &ISR_INT_SwitchOff;
 	// If off transition was not long ago - change mode
 	if (SYSTIMER_TO.TO_PowerSwitch > 0)
