@@ -5,7 +5,7 @@
 // #include <avr/eeprom.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
-// #include <avr/pgmspace.h>
+#include <avr/pgmspace.h>
 // #include <avr/wdt.h>
 // #include <util/delay.h>
 // #include <util/crc16.h>
