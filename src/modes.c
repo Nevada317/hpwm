@@ -1,6 +1,6 @@
 #include "libs.h"
 
-static devMode CurrentMode = 0;
+devMode CurrentMode = 0;
 static void (*ptrISR_INT_handler)();
 
 void ISR_INT_SwitchOn();
@@ -77,7 +77,7 @@ void updateMode() {
 			case devMode_AUTO:
 			default:
 				LedColor = LED_Y;
-				PWM_SetTarget(*(rConfig+3)); // dummy
+				// PWM target set in ADC interrupt
 				GPIO_SetEditor(rConfig+3);
 				break;
 		}

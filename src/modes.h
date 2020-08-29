@@ -27,3 +27,4 @@ void updateMode();
 void MODES_Init();
 bool IsOn();
 
+extern devMode CurrentMode;

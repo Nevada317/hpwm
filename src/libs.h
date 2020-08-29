@@ -19,10 +19,10 @@
 
 #include "gpio.h"
 #include "pwm.h"
-#include "adc.h"
 #include "modes.h"
 #include "systimer.h"
 #include "eeprom.h"
+#include "adc.h"
 
 
 #endif
