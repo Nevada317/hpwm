@@ -82,6 +82,7 @@ void updateMode() {
 		}
 	} else {
 		EEPROM_StoreConfig();
+		GPIO_SetEditor(0);
 	}
 	PORTC = LedColor;
 }
