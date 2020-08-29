@@ -57,6 +57,7 @@ void setMode(devMode NewMode) {
 void updateMode() {
 	ledColor LedColor = LED_R;
 	if (IsOn()) {
+		DDRC = 0b00000111; // Enable status LED driver
 		switch (CurrentMode) {
 			case devMode_LVL1:
 				LedColor = LED_G;
@@ -81,6 +82,7 @@ void updateMode() {
 				break;
 		}
 	} else {
+		DDRC = 0b00000000; // Decrease brightness of status LED
 		EEPROM_StoreConfig();
 		GPIO_SetEditor(0);
 	}
