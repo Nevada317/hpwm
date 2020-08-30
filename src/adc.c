@@ -9,7 +9,7 @@ static struct Avg {
 #define Tolerance 256
 
 void ADC_Init() {
-	ADMUX = (1<<REFS1) | (1<<REFS0) | (1<<ADLAR) | (0<<MUX3) | (0<<MUX2) | (1<<MUX1) | (1<<MUX0);
+	ADMUX = (1<<REFS1) | (1<<REFS0) | (0<<ADLAR) | (0<<MUX3) | (0<<MUX2) | (1<<MUX1) | (1<<MUX0);
 	ADCSRA = (1<<ADEN) | (1<<ADSC) | (1<<ADFR) | (1<<ADIF) | (1<<ADIE) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
 }
 
@@ -23,10 +23,10 @@ ISR(ADC_vect) {
 	Averaging.Sum += meas;
 	Averaging.Count++;
 
-	if (Averaging.Count >= 64) {
+	if (Averaging.Count == 64) {
+		Averaging.Valid = Averaging.Sum;
 		Averaging.Count = 0;
 		Averaging.Sum = 0;
-		Averaging.Valid = Averaging.Sum;
 
 		uint16_t target = *(rConfig+3) << 8;
 		uint16_t diff;
