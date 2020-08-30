@@ -6,7 +6,7 @@ static struct Avg {
 	uint16_t Valid;
 } Averaging;
 
-#define Tolerance 256
+#define Tolerance 32
 
 void ADC_Init() {
 	ADMUX = (1<<REFS1) | (1<<REFS0) | (0<<ADLAR) | (0<<MUX3) | (0<<MUX2) | (1<<MUX1) | (1<<MUX0);
@@ -23,12 +23,15 @@ ISR(ADC_vect) {
 	Averaging.Sum += meas;
 	Averaging.Count++;
 
-	if (Averaging.Count == 64) {
-		Averaging.Valid = Averaging.Sum;
+	if (Averaging.Count == 16) {
 		Averaging.Count = 0;
 		Averaging.Sum = 0;
+	}
 
-		uint16_t target = *(rConfig+3) << 8;
+	if (Averaging.Count == 8) {
+		Averaging.Valid = Averaging.Sum;
+
+		uint16_t target = (*(rConfig+3) << 5) + (1 << 4);
 		uint16_t diff;
 		if (target >= Averaging.Valid)
 			diff = target - Averaging.Valid;
