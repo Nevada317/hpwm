@@ -9,4 +9,6 @@ void SYSTIMER_Init();
 struct SYSTIMER_Timeout {
 	uint16_t TO_PowerSwitch;
 	uint16_t TO_ButtonDelay;
-} SYSTIMER_TO;
+};
+
+extern volatile struct SYSTIMER_Timeout SYSTIMER_TO;

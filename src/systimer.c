@@ -1,5 +1,7 @@
 #include "libs.h"
 
+volatile struct SYSTIMER_Timeout SYSTIMER_TO;
+
 void SYSTIMER_Init() {
 	TCCR0 = 0b100; // f/256
 	TIMSK |= (1<<TOIE0);
